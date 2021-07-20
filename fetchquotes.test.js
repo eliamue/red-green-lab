@@ -1,10 +1,10 @@
 import fetchQuotes from './fetchquotes';
 
-describe('fetchQuotes', async () => {
-  it('fetches a single futurama character quote from external API');
+describe('fetchQuotes', () => {
+  it('fetches a single futurama character quote from external API', async () => {
+    const actual = await fetchQuotes();
 
-  const actual = await fetchQuotes();
-
-
-  expect(actual).toEqual(expect.any(Object));
+    expect(actual).toEqual(expect.any(Object));
+    console.log(actual);
+  });
 });
