@@ -1,8 +1,10 @@
-export default function capitalizeAndFilter(array) {
-
-  for (const letter of array) {
-    const newArray = letter.charAt(0).toUpperCase() + array.substr(1);
-    return newArray;
-  }
+const capitalizeAndFilter = (array) => {
   
-}
+  const filteredArray = array.filter(letter => (letter[0] !== 'f' && letter[0] !== 'F'));
+  
+  const capitalizedArray = filteredArray.map(letter => (letter.charAt(0).toUpperCase() + letter.slice(1)));
+  
+  return capitalizedArray;
+};
+
+export default capitalizeAndFilter;
