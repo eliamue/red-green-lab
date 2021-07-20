@@ -6,7 +6,7 @@ describe('getNames', () => {
     const expected = 'Teen Wolf';
     const actual = getNames(stats);
 
-    expect(actual).toContainEqual(expected);
+    expect(actual).toEqual(expected);
   });
 
 });

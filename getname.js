@@ -1,5 +1,7 @@
 const getNames = () => {
-  return ['Teen Wolf', 'Melhissandre', 'Zoey', 'Sir Digby Chicken Caesar'];
+  const dingus = { name: 'Teen Wolf', age: 999, sex: 'female', species: 'cat' };
+  return dingus.name;
+
 };
 
 export default getNames;
