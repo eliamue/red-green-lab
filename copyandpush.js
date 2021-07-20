@@ -1,6 +1,6 @@
 const copyAndPush = (things, newThing) => {
-  const moreThings = things;
-  things.push(newThing);
+  const moreThings = things.slice();
+  moreThings.push(newThing);
   return moreThings;
 };
 
