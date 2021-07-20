@@ -1,7 +1,5 @@
-const getNames = () => {
-  const dingus = { name: 'Teen Wolf', age: 999, sex: 'female', species: 'cat' };
+const getNames = (dingus) => {
   return dingus.name;
-
 };
 
 export default getNames;
